@@ -351,6 +351,26 @@ section {
   transform: translateY(0);
 }
 
+.gallery-item .gallery-title {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: all 0.4s ease;
+  z-index: 2;
+  letter-spacing: 0.02em;
+}
+
+.gallery-item:hover .gallery-title {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ═══ LIGHTBOX ═══ */
 .lightbox {
   position: fixed;
@@ -774,31 +794,38 @@ body::before {
   </div>
   <div class="gallery-grid">
     <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox(0)">
-      <img src="content/IMG_4929.PNG" alt="Работа" loading="lazy">
+      <img src="content/IMG_4929.PNG" alt="Мысли" loading="lazy">
+      <div class="gallery-title">Мысли</div>
       <div class="expand-icon">⤢</div>
     </div>
     <div class="gallery-item reveal reveal-delay-2" onclick="openLightbox(1)">
-      <img src="content/IMG_4863.PNG" alt="Работа" loading="lazy">
+      <img src="content/IMG_4863.PNG" alt="Сфера Эа" loading="lazy">
+      <div class="gallery-title">Сфера Эа</div>
       <div class="expand-icon">⤢</div>
     </div>
     <div class="gallery-item reveal reveal-delay-3" onclick="openLightbox(2)">
-      <img src="content/IMG_5505.PNG" alt="Работа" loading="lazy">
+      <img src="content/IMG_5505.PNG" alt="Бездна" loading="lazy">
+      <div class="gallery-title">Бездна</div>
       <div class="expand-icon">⤢</div>
     </div>
     <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox(3)">
-      <img src="content/IMG_4865.PNG" alt="Работа" loading="lazy">
+      <img src="content/IMG_4865.PNG" alt="Бездна Тиамат" loading="lazy">
+      <div class="gallery-title">Бездна Тиамат</div>
       <div class="expand-icon">⤢</div>
     </div>
     <div class="gallery-item reveal reveal-delay-2" onclick="openLightbox(4)">
-      <img src="content/IMG_4858.PNG" alt="Работа" loading="lazy">
+      <img src="content/IMG_4858.PNG" alt="Гармония" loading="lazy">
+      <div class="gallery-title">Гармония</div>
       <div class="expand-icon">⤢</div>
     </div>
     <div class="gallery-item reveal reveal-delay-3" onclick="openLightbox(5)">
-      <img src="content/IMG_5532.PNG" alt="Работа" loading="lazy">
+      <img src="content/IMG_5532.PNG" alt="В потоке" loading="lazy">
+      <div class="gallery-title">В потоке</div>
       <div class="expand-icon">⤢</div>
     </div>
     <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox(6)">
-      <img src="content/IMG_5552.PNG" alt="Работа" loading="lazy">
+      <img src="content/IMG_5552.PNG" alt="Освобождение" loading="lazy">
+      <div class="gallery-title">Освобождение</div>
       <div class="expand-icon">⤢</div>
     </div>
   </div>
