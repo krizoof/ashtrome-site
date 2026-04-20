@@ -693,6 +693,18 @@ section {
   background: var(--accent-dim);
 }
 
+.inline-link {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.4);
+  transition: all 0.3s ease;
+}
+
+.inline-link:hover {
+  border-bottom-color: var(--accent);
+  color: var(--accent);
+}
+
 /* ═══ FOOTER ═══ */
 footer {
   padding: 3rem;
@@ -849,7 +861,7 @@ body::before {
       <div class="about-quote reveal">
         «В мире симулякров авторство перестаёт быть вопросом эго. Оно становится доказательством жизни — свидетельством того, что в цифровом вакууме всё ещё бьётся человеческий пульс»
       </div>
-      <p class="reveal">Автор Telegram-каналов «ASH | Трансфигурация Смысла» и «Иkстлан». Философские влияния: Бодрийяр, Маклюэн, Беньямин, Гурджиев, Кастанеда, Юнг.</p>
+      <p class="reveal">Автор Telegram-канала <a href="https://t.me/ASHTroMe" target="_blank" class="inline-link">«ASH | Трансфигурация Смысла»</a>. Философские влияния: Бодрийяр, Маклюэн, Беньямин, Гурджиев, Кастанеда, Юнг.</p>
     </div>
   </div>
 </section>
